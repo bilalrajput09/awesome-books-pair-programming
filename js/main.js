@@ -26,8 +26,6 @@ const addBooks = (title, author) => {
     };
     books.push(obj);
     localStorage.setItem('Books', JSON.stringify(books));
-    document.getElementById('title').value = '';
-    document.getElementById('author').value = '';
   }
 };
 addBtn.addEventListener('click', (e) => {
