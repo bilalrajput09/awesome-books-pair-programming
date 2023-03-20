@@ -1,4 +1,4 @@
-# My-Portfolio
+# Awesome Books
 
 <a name="readme-top"></a>
 
@@ -56,19 +56,13 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo](https://bilalrajput09.github.io/first_capstone_project_concert_webpage/)
+- [Live Demo](https://github.com/bilalrajput09/awesome-books-pair-programming)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Screenshot <a name="screenshot"></a>
 
-![image](./assets/project%20screenshot.png)
-
-## 💻 Loom Presentation Video <a name="loom-video"></a>
-
-- [Loom Link](https://www.loom.com/share/880aaeb1fc634693a3c0a111cceed603)
-
-
+!
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
@@ -86,8 +80,6 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 cd my-folder
-git clone https://github.com/bilalrajput09/first_capstone_project_concert_webpage.git
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -100,6 +92,12 @@ Bilal Ahmed
 - GitHub: [@bilalrajput09](https://github.com/bilalrajput09)
 - Twitter: [@bilal_rajput09](https://twitter.com/bilal_rajput09)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/bilal-ahmed-18b12019a/)
+
+👤 **Author2**
+
+- GitHub: [@bilalrajput09](https://github.com/JOdiemo)
+- Twitter: [@bilal_rajput09](https://twitter.com/JorumOdiemo)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/jorumodiemo/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
