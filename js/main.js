@@ -23,7 +23,7 @@ const addBooks = (title, author) => {
             Author: author,
         }
         books.push(obj);
-        localStorage.setItem('Books', JSON.stringify(obj));
+        localStorage.setItem('Books', JSON.stringify(books));
     }
 }
 
@@ -44,11 +44,10 @@ function display() {
 }
 
 const remove = (id) => {
-    const bookIndex = books.findIndex((item, i) => {
-        i === id;
-    });
-    books.splice(bookIndex, 1);
-    localStorage.setItem('Books', JSON.stringify(obj));
+  const BookIndex = books.findIndex((item, i) => i === id);
+    books.splice(BookIndex, 1);
+    localStorage.setItem('Books', JSON.stringify(books));
+    console.log(id)
     display();
 }
 
