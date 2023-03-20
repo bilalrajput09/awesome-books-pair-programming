@@ -30,6 +30,7 @@ const addBooks = (title, author) => {
 function display() {
     let display = ``;
     books.forEach((sec, i) => {
+        console.log(sec, i);
         display += `
       <div>
         <p>${sec.Title}</p>
@@ -44,10 +45,11 @@ function display() {
 }
 
 const remove = (id) => {
-  const BookIndex = books.findIndex((item, i) => i === id);
+    const BookIndex = books.findIndex((item, i) => {
+        id === i;
+    });
     books.splice(BookIndex, 1);
     localStorage.setItem('Books', JSON.stringify(books));
-    console.log(id)
     display();
 }
 
@@ -57,10 +59,10 @@ function checkLocalStorage() {
     }
     else {
         books = JSON.parse(localStorage.getItem("Books"));
+        display();
     }
 
 }
 
 checkLocalStorage();
-
 
