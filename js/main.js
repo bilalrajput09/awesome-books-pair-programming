@@ -1,11 +1,19 @@
-// Select elements
+/* eslint-disable no-unused-vars */
 
 const bookList = document.getElementsByClassName('book_list')[0];
 const addBtn = document.getElementsByClassName('btn_form')[0];
-const removeBtn = document.getElementsByClassName('remove');
 let books = [];
 
+function checkLocalStorage() {
+  if (localStorage.getItem('Books') == null) {
+    books = [];
+  } else {
+    books = JSON.parse(localStorage.getItem('Books'));
+  }
+}
+
 function display() {
+  checkLocalStorage();
   let display = '';
   books.forEach((sec, i) => {
     display += `
@@ -34,24 +42,17 @@ addBtn.addEventListener('click', (e) => {
   const author = document.getElementById('author').value.trim();
   addBooks(title, author);
   display();
+  document.getElementById('title').value = "";
+  document.getElementById('author').value = "";
 });
 
-function remove(id) {
+const remove = (id) => {
   const BookIndex = books.findIndex((item, i) => id === i);
   books.splice(BookIndex, 1);
   localStorage.setItem('Books', JSON.stringify(books));
   display();
-}
+};
 
-removeBtn.addEventListener('click', remove);
-
-function checkLocalStorage() {
-  if (localStorage.getItem('Books') == null) {
-    books = [];
-  } else {
-    books = JSON.parse(localStorage.getItem('Books'));
-    display();
-  }
-}
-
-checkLocalStorage();
+window.addEventListener('DOMContentLoaded', () => {
+  display();
+});
