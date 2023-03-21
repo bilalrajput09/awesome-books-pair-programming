@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -10,42 +11,78 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin: 2%;
+  text-align: center;
+}
+.main_container {
+  padding: 2em;
+  min-width: 50%;
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heading {
+  margin-bottom: 0.5em;
 }
 
 .book_list {
-  width: 80%;
+  width: 100%;
   border: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.paragraph {
+  display: flex;
+  gap: 3px;
+  text-align: center;
 }
 
 .allbooks {
-  width: 50%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 0.5rem 0 0.5rem;
+  padding: 0.5em 0.5em;
+  background-color: rgb(199, 199, 199);
 }
-
-.allbooks:nth-of-type(odd) {
-  background-color: #d3d3d3;
-  height: 50px;
+.heading1 {
+  margin: 0.5em 0;
 }
-
-.allbooks:nth-of-type(even) {
-  background-color: #fff;
-  height: 50px;
-}
-
 .allbooks p {
   font-size: 18px;
   font-weight: 700;
 }
-
-.removeBtn {
-  width: 15%;
-  height: 30px;
-  border: 3px solid black;
-  background-color: white;
-  box-shadow: 3px 2px 0 black;
+.form {
+  width: 50%;
+  min-width: 250px;
+}
+input {
+  padding: 0.5em 0.7em;
+  width: 100%;
+  margin: 0 auto;
+  /* min-width: 70%;
+  max-width: 400px; */
+  border: 2px solid rgb(36, 41, 36);
+  font-weight: 600;
+}
+input::placeholder {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(158, 152, 152);
 }
 
+.remove {
+  padding: 0.2em;
+  font-weight: 600;
+  border: 3px solid black;
+  background-color: white;
+  box-shadow: 2px 3px 0 black;
+}
+.add-btn {
+  font-size: 16px;
+  font-weight: 600;
+  background-color: white;
+  padding: 0.2em 1em;
+  float: right;
+}

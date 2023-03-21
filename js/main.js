@@ -28,8 +28,11 @@ class DisplayBooks {
     books.forEach((sec, i) => {
       display += `
       <div class="allbooks">
-        <p>${sec.title}</p>
-        <p>${sec.author}</p>
+        <div class= "paragraph">
+        <p>"${sec.title}"</p>
+        <p> by</p>
+        <p> ${sec.author}</p>
+        </div>
         <button class = "remove" onclick = "DisplayBooks.remove(${i})">Remove</button>
       </div>
     `;
