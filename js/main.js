@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
+/* eslint-disable max-classes-per-file */
 const bookList = document.getElementsByClassName('book_list')[0];
 const addBtn = document.getElementsByClassName('add-btn')[0];
-
 
 class BooksStore {
   constructor(title, author) {
@@ -12,7 +12,6 @@ class BooksStore {
 
 let books = [];
 class DisplayBooks {
-
   static checkLocalStorage() {
     if (localStorage.getItem('Books') == null) {
       books = [];
@@ -21,9 +20,9 @@ class DisplayBooks {
     }
     return books;
   }
+
   static display() {
     const books = DisplayBooks.checkLocalStorage();
-    console.log(books);
     let display = '';
     books.forEach((sec, i) => {
       display += `
@@ -41,9 +40,8 @@ class DisplayBooks {
   }
 
   static addBooks = (title, author) => {
-
-    const bookTitle = document.getElementById("title").value;
-    const bookAuthor = document.getElementById("author").value;
+    const bookTitle = document.getElementById('title').value;
+    const bookAuthor = document.getElementById('author').value;
     if (bookTitle !== '' && bookAuthor !== '') {
       const obj = new BooksStore(bookTitle, bookAuthor);
       const books = DisplayBooks.checkLocalStorage();
@@ -59,8 +57,6 @@ class DisplayBooks {
     localStorage.setItem('Books', JSON.stringify(books));
     DisplayBooks.display();
   };
-
-
 }
 
 addBtn.addEventListener('click', (e) => {
