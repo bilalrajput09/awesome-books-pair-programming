@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 
 const bookList = document.getElementsByClassName('book_list')[0];
-const addBtn = document.getElementsByClassName('btn_form')[0];
+const addBtn = document.getElementsByClassName('add-btn')[0];
 let books = [];
 
 function checkLocalStorage() {
