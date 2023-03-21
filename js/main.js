@@ -27,7 +27,7 @@ class DisplayBooks {
     let display = '';
     books.forEach((sec, i) => {
       display += `
-      <div>
+      <div class="allbooks">
         <p>${sec.title}</p>
         <p>${sec.author}</p>
         <button class = "remove" onclick = "DisplayBooks.remove(${i})">Remove</button>
