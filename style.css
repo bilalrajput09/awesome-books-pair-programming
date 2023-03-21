@@ -78,9 +78,6 @@ input {
   padding: 0.5em 0.7em;
   width: 100%;
   margin: 0 auto;
-
-  /* min-width: 70%;
-  max-width: 400px; */
   border: 2px solid rgb(36, 41, 36);
   font-weight: 600;
 }

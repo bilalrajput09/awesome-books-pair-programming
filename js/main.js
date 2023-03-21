@@ -12,6 +12,7 @@ class BooksStore {
 }
 
 let books = [];
+/* eslint-disable no-unused-vars */
 class DisplayBooks {
   static checkLocalStorage() {
     if (localStorage.getItem('Books') == null) {
