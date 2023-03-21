@@ -1,5 +1,6 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable max-classes-per-file */
+/* eslint-disable no-unused-vars */
+
 const bookList = document.getElementsByClassName('book_list')[0];
 const addBtn = document.getElementsByClassName('add-btn')[0];
 
