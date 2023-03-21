@@ -1,4 +1,4 @@
-# My-Portfolio
+# Awesome Books
 
 <a name="readme-top"></a>
 
@@ -17,36 +17,12 @@
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
 
-# 📖 [Nescafe Basement Show] <a name="about-project"></a>
+# 📖 [Awesome Books] <a name="about-project"></a>
 
-**[Nescafe Basement Show Website]** Nescafe Basement is a Pakistani music television series and platform that showcases emerging and established musical talent from the country. The show features live performances and covers of both and original songs across various genres, and aims to provide a platform for artists to showcase their skill and gain wider recognition.
+**[Awesome Books Website]** "Awesome books" is a simple website that displays a list of books and allows you to add and remove books from that list. By building this application, manages data using JavaScript and isinteractive. It uses a medium-fidelity wireframe to build the UI.
 
 ## 🛠 Built With HTML CSS and Javscript <a name="built-with"></a>
 
-### Tech Stack <a name="tech-stack"></a>
-
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://en.wikipedia.org/wiki/HTML">HTML</a></li>
-    <li><a href="https://www.w3.org/Style/CSS/Overview.en.html">CSS</a></li>
-    <li><a href="https://www.javascript.com/">JavaScript</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="">N/A</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="">N/A</a></li>
-  </ul>
-</details>
 
 ### Key Features <a name="key-features"></a>
 
@@ -56,19 +32,13 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo](https://bilalrajput09.github.io/first_capstone_project_concert_webpage/)
+- [Live Demo](https://github.com/bilalrajput09/awesome-books-pair-programming)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Screenshot <a name="screenshot"></a>
 
-![image](./assets/project%20screenshot.png)
-
-## 💻 Loom Presentation Video <a name="loom-video"></a>
-
-- [Loom Link](https://www.loom.com/share/880aaeb1fc634693a3c0a111cceed603)
-
-
+!
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
@@ -86,8 +56,6 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 cd my-folder
-git clone https://github.com/bilalrajput09/first_capstone_project_concert_webpage.git
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -100,6 +68,12 @@ Bilal Ahmed
 - GitHub: [@bilalrajput09](https://github.com/bilalrajput09)
 - Twitter: [@bilal_rajput09](https://twitter.com/bilal_rajput09)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/bilal-ahmed-18b12019a/)
+
+👤 **Author2**
+
+- GitHub: [@bilalrajput09](https://github.com/JOdiemo)
+- Twitter: [@bilal_rajput09](https://twitter.com/JorumOdiemo)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/jorumodiemo/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
