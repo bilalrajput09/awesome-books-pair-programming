@@ -17,6 +17,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   text-align: center;
+  background-color: #dadada;
 }
 
 header {
@@ -62,8 +63,12 @@ nav {
   margin-bottom: 0.5em;
 }
 
+.list_container {
+  width: 100%;
+}
+
 .book_list {
-  width: 95%;
+  width: 100%;
   border: 2px solid black;
   display: flex;
   justify-content: space-between;
@@ -181,4 +186,8 @@ footer {
 
 .contact_item {
   margin-bottom: 0.2em;
+}
+
+.hidden {
+  display: none;
 }

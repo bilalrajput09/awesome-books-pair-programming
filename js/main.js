@@ -3,6 +3,30 @@
 
 const bookList = document.getElementsByClassName('book_list')[0];
 const addBtn = document.getElementsByClassName('add-btn')[0];
+const listContainer = document.querySelector('.list_container');
+const addNewBtn = document.querySelector('.add_new_btn');
+const listBtn = document.querySelector('.list_btn');
+const contactBtn = document.querySelector('.contact_btn');
+const mainForm = document.querySelector('.form');
+const contactPage = document.querySelector('.contact');
+
+listBtn.addEventListener('click', () => {
+  mainForm.classList.add('hidden');
+  listContainer.classList.remove('hidden');
+  contactPage.classList.add('hidden');
+});
+
+contactBtn.addEventListener('click', () => {
+  mainForm.classList.add('hidden');
+  listContainer.classList.add('hidden');
+  contactPage.classList.remove('hidden');
+});
+
+addNewBtn.addEventListener('click', () => {
+  mainForm.classList.remove('hidden');
+  listContainer.classList.add('hidden');
+  contactPage.classList.add('hidden');
+});
 
 class BooksStore {
   constructor(title, author) {
@@ -71,6 +95,6 @@ addBtn.addEventListener('click', (e) => {
   document.getElementById('author').value = '';
 });
 
-window.addEventListener('DOMContentLoaded', () => {
-  DisplayBooks.display();
-});
+// window.addEventListener('DOMContentLoaded', () => {
+//   DisplayBooks.display();
+// });
