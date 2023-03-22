@@ -71,7 +71,7 @@ Bilal Ahmed
 
 👤 **Author2**
 
-- GitHub: [@bJOdiemo](https://github.com/JOdiemo)
+- GitHub: [@JOdiemo](https://github.com/JOdiemo)
 - Twitter: [@JorumOdiemo](https://twitter.com/JorumOdiemo)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/jorumodiemo/)
 
