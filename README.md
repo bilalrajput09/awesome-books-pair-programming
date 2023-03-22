@@ -71,8 +71,8 @@ Bilal Ahmed
 
 👤 **Author2**
 
-- GitHub: [@bilalrajput09](https://github.com/JOdiemo)
-- Twitter: [@bilal_rajput09](https://twitter.com/JorumOdiemo)
+- GitHub: [@bJOdiemo](https://github.com/JOdiemo)
+- Twitter: [@JorumOdiemo](https://twitter.com/JorumOdiemo)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/jorumodiemo/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
