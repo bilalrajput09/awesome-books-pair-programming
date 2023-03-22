@@ -24,8 +24,10 @@
 - JavaScript
 
 ### Key Features <a name="key-features"></a>
-
-- **It shows html css and javascript skills of developer.**
+- Adding a Book 
+- Listing the Books
+- Contact Information
+- Navigating between the different web pages
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
