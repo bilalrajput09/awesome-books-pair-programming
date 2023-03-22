@@ -1,58 +1,76 @@
+/* eslint-disable max-classes-per-file */
 /* eslint-disable no-unused-vars */
 
 const bookList = document.getElementsByClassName('book_list')[0];
-const addBtn = document.getElementsByClassName('btn_form')[0];
-let books = [];
+const addBtn = document.getElementsByClassName('add-btn')[0];
 
-function checkLocalStorage() {
-  if (localStorage.getItem('Books') == null) {
-    books = [];
-  } else {
-    books = JSON.parse(localStorage.getItem('Books'));
+class BooksStore {
+  constructor(title, author) {
+    this.title = title;
+    this.author = author;
   }
 }
 
-function display() {
-  checkLocalStorage();
-  let display = '';
-  books.forEach((sec, i) => {
-    display += `
-      <div>
-        <p>${sec.Title}</p>
-        <p>${sec.Author}</p>
-        <button class = "remove" onclick = "remove(${i})">Remove</button>
+let books = [];
+/* eslint-disable no-unused-vars */
+class DisplayBooks {
+  static checkLocalStorage() {
+    if (localStorage.getItem('Books') == null) {
+      books = [];
+    } else {
+      books = JSON.parse(localStorage.getItem('Books'));
+    }
+    return books;
+  }
+
+  static display() {
+    const books = DisplayBooks.checkLocalStorage();
+    let display = '';
+    books.forEach((sec, i) => {
+      display += `
+      <div class="allbooks">
+        <div class= "paragraph">
+        <p>"${sec.title}"</p>
+        <p> by</p>
+        <p> ${sec.author}</p>
+        </div>
+        <button class = "remove" onclick = "DisplayBooks.remove(${i})">Remove</button>
       </div>
     `;
-  });
-  bookList.innerHTML = display;
-}
-const addBooks = (title, author) => {
-  if (title !== '' && author !== '') {
-    const obj = {
-      Title: title,
-      Author: author,
-    };
-    books.push(obj);
-    localStorage.setItem('Books', JSON.stringify(books));
+    });
+    bookList.innerHTML = display;
   }
-};
+
+  static addBooks = (title, author) => {
+    const bookTitle = document.getElementById('title').value;
+    const bookAuthor = document.getElementById('author').value;
+    if (bookTitle !== '' && bookAuthor !== '') {
+      const obj = new BooksStore(bookTitle, bookAuthor);
+      const books = DisplayBooks.checkLocalStorage();
+
+      books.push(obj);
+      localStorage.setItem('Books', JSON.stringify(books));
+    }
+  };
+
+  static remove = (id) => {
+    const BookIndex = books.findIndex((item, i) => id === i);
+    books.splice(BookIndex, 1);
+    localStorage.setItem('Books', JSON.stringify(books));
+    DisplayBooks.display();
+  };
+}
+
 addBtn.addEventListener('click', (e) => {
   e.preventDefault();
   const title = document.getElementById('title').value.trim();
   const author = document.getElementById('author').value.trim();
-  addBooks(title, author);
-  display();
+  DisplayBooks.addBooks(title, author);
+  DisplayBooks.display();
   document.getElementById('title').value = '';
   document.getElementById('author').value = '';
 });
 
-const remove = (id) => {
-  const BookIndex = books.findIndex((item, i) => id === i);
-  books.splice(BookIndex, 1);
-  localStorage.setItem('Books', JSON.stringify(books));
-  display();
-};
-
 window.addEventListener('DOMContentLoaded', () => {
-  display();
+  DisplayBooks.display();
 });
