@@ -1,12 +1,9 @@
-# Awesome Books
-
 <a name="readme-top"></a>
 
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
@@ -21,24 +18,19 @@
 
 **[Awesome Books Website]** "Awesome books" is a simple website that displays a list of books and allows you to add and remove books from that list. By building this application, manages data using JavaScript and isinteractive. It uses a medium-fidelity wireframe to build the UI.
 
-## 🛠 Built With HTML CSS and Javscript <a name="built-with"></a>
-
+## 🛠 Built With <a name="built-with"></a>
+- HTML
+- CSS
+- JavaScript
 
 ### Key Features <a name="key-features"></a>
-
-- **It shows html css and javascript skills of developer.**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Live Demo](https://github.com/bilalrajput09/awesome-books-pair-programming)
+- Adding a Book 
+- Listing the Books
+- Contact Information
+- Navigating between the different web pages
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Screenshot <a name="screenshot"></a>
-
-!
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
@@ -54,24 +46,31 @@ In order to run this project you need:
 ### Setup
 
 Clone this repository to your desired folder:
-
 cd my-folder
+git clone git@github.com:bilalrajput09/awesome-books-pair-programming.git
+cd awesome-books-pair-programming
+
+### Install
+npm install
+
+### Usage
+Install Live Server on VS Code and open index.html on your browser
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Authors <a name="authors"></a>
 
-Bilal Ahmed
 
-👤 **Author1**
+
+👤 **Bilal Ahmed**
 
 - GitHub: [@bilalrajput09](https://github.com/bilalrajput09)
 - Twitter: [@bilal_rajput09](https://twitter.com/bilal_rajput09)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/bilal-ahmed-18b12019a/)
 
-👤 **Author2**
+👤 **Jorum Odiemo**
 
-- GitHub: [@bJOdiemo](https://github.com/JOdiemo)
+- GitHub: [@JOdiemo](https://github.com/JOdiemo)
 - Twitter: [@JorumOdiemo](https://twitter.com/JorumOdiemo)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/jorumodiemo/)
 
@@ -104,7 +103,7 @@ Look at what I did !! Your support matters a lot
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 ---> I express my gratitude to the Microverse team for granting us the opportunity to collaborate on this project. <br>
----> The design concept featured in this project originates from <a href="https://www.behance.net/adagio07">Cindy Shin in Behance".</a>
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- LICENSE -->

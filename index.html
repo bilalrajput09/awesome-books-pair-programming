@@ -10,10 +10,44 @@
 </head>
 
 <body>
+    <header>
+        <nav ">
+            <div class=" logo">
+            <a href="" class="">Awesome Books</a>
+            </div>
+            <ul class="nav_list">
+                <li class="nav_items">
+                    <a href="#" class="list_btn">List</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#" class="add_new_btn">Add new</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#" class="contact_btn">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
     <div class="main_container">
-        <h1 class="heading">All awesome books</h1>
-        <div class="book_list"></div>
-        <hr>
+        <div class="list_container hidden">
+            <h1 class="heading">All awesome books</h1>
+            <div class="book_list"></div>
+            <hr>
+        </div>
+
+        <div class="contact hidden">
+            <h2 class="contact-title">Contact Information</h2>
+            <p class="contact_para">Do you have any questions or you just want to say 'Hello'? <br> You can reach out to
+                us!
+            </p>
+            <ul class="contact_item_list">
+                <li class="contact_item">Our email: mail@mail.com</li>
+                <li class="contact_item">Our phone number: 004368663442</li>
+                <li class="contact_item">Our address: Street Name, 22, 84603, City, Country</li>
+            </ul>
+        </div>
+
         <form class="form">
             <h2 class="heading1">Add new Books</h2>
             <input type="text" id="title" name="title" placeholder="Title" required><br><br>
@@ -21,6 +55,8 @@
             <button class="add-btn" type="submit">Add</button>
         </form>
     </div>
+    <footer>Copyright@2023...</footer>
+
     <script src="./js/main.js"></script>
 </body>
 
